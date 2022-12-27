@@ -77,7 +77,7 @@ export default {
     },
     bdd: function () {
       this.guguData.push(
-        this.gugu * 1,
+        this.gugu * 1 + 'x1 = ' + this.gugu * 1,
         this.gugu * 2,
         this.gugu * 3,
         this.gugu * 4,
