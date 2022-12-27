@@ -41,7 +41,9 @@
   <button v-on:click="bdd">열려라 참깨!</button>
   <button v-on:click="bub">닫아라 참깨!</button>
   <br />
-  <span v-for="data0 in guguData" :key="data0">{{ data0 }} </span>
+  <span class="span00" v-for="data0 in guguData" :key="data0"
+    >{{ data0 }}
+  </span>
   <p>몇단이죠?{{ guguanum }}</p>
 </template>
 
@@ -78,14 +80,14 @@ export default {
     bdd: function () {
       this.guguData.push(
         this.gugu * 1 + 'x1 = ' + this.gugu * 1,
-        this.gugu * 2,
-        this.gugu * 3,
-        this.gugu * 4,
-        this.gugu * 5,
-        this.gugu * 6,
-        this.gugu * 7,
-        this.gugu * 8,
-        this.gugu * 9
+        this.gugu * 1 + 'x2 = ' + this.gugu * 2,
+        this.gugu * 3 + 'x3 = ' + this.gugu * 3,
+        this.gugu * 4 + 'x4 = ' + this.gugu * 4,
+        this.gugu * 5 + 'x5 = ' + this.gugu * 5,
+        this.gugu * 6 + 'x6 = ' + this.gugu * 6,
+        this.gugu * 7 + 'x7 = ' + this.gugu * 7,
+        this.gugu * 8 + 'x8 = ' + this.gugu * 8,
+        this.gugu * 9 + 'x9 = ' + this.gugu * 9
       )
       this.guguanum = this.gugu + '단'
       this.gugu = ''
@@ -112,5 +114,8 @@ li {
 
 li > text {
   margin-left: -3px;
+}
+.span00 {
+  display: flex;
 }
 </style>
