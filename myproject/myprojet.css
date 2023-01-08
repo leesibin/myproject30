@@ -1,18 +1,23 @@
-/* 전체배경 */
-.div_BG {
-    background-color: #000;
+ #head{
+    background-color: gray;
+    width: auto;
+    height: 300px;
+}
+
+.main {
+    background-color: antiquewhite;
     width: auto;
     height: 1000px;
 }
 
-.div_BG_letter {
-    color: #fff;
-    font-family: 'Rubik Spray Paint', cursive;
-    text-align: center;
-    font-size: 100px;
+#foot {
+    background-color: grey;
+    width: auto;
+    height: 100px;
+    margin-top: 10px;
 }
 
-div {
-    color: #fff;
-    si
+.img_head{
+    width: 100%;
+    height: 100%;
 }
