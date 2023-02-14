@@ -1,16 +1,16 @@
 <template>
-  <div></div>
+  <div>4페이지 입니다</div>
 </template>
 
 <script>
 /* eslint-disable */
 export default {
-  name: "app",
+  name: 'app',
   data() {
-    return {};
+    return {}
   },
-  methods: {},
-};
+  methods: {}
+}
 </script>
 
 <style></style>

@@ -6,13 +6,23 @@
       >'느린 것을 두려워 말고, 멈추는 것을 두려워하라'</strong
     >
   </div>
+  <component :is="choice"></component>
   <div id="about">
-    about
-    <img src="../assets/tree.jpg" alt="첫번째 프로젝트" class="about-img" />
+    일정 관리 앱
+    <div class="about_do" @click="page1()"></div>
   </div>
-  <div id="tech">tech</div>
-  <div id="awards">awards</div>
-  <div id="blog">blog</div>
+  <div id="tech">
+    tech
+    <div class="tech_do" @click="page1()"></div>
+  </div>
+  <div id="awards">
+    awards
+    <div class="awards_do" @click="page1()"></div>
+  </div>
+  <div id="blog">
+    blog
+    <div class="blog_do" @click="page1()"></div>
+  </div>
 </template>
 
 <script>
@@ -22,7 +32,24 @@ export default {
   data() {
     return {};
   },
-  methods: {},
+  methods: {
+    page1: function () {
+      window.location.href = link;
+      var link = "http://localhost:8080/page1";
+    },
+    page2: function () {
+      window.location.href = link;
+      var link = "http://localhost:8080/page2";
+    },
+    page3: function () {
+      window.location.href = link;
+      var link = "http://localhost:8080/page3";
+    },
+    page4: function () {
+      window.location.href = link;
+      var link = "http://localhost:8080/page4";
+    },
+  },
 };
 </script>
 
@@ -64,12 +91,13 @@ body {
   height: 500px;
   background-color: #1b1b1b;
 }
-.about-img {
+.about_do {
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  background-color: wheat;
   position: absolute;
   right: 30px;
-  width: auto;
-  height: 500px;
-  border-radius: 10px;
 }
 /* tech */
 #tech {
@@ -78,6 +106,14 @@ body {
   height: 500px;
   background-color: bisque;
 }
+.tech_do {
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  background-color: #1b1b1b;
+  position: absolute;
+  left: 30px;
+}
 /* awards */
 #awards {
   padding: 20px;
@@ -85,11 +121,27 @@ body {
   height: 500px;
   background-color: #1b1b1b;
 }
+.awards_do {
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  background-color: wheat;
+  position: absolute;
+  right: 30px;
+}
 /* blog */
 #blog {
   padding: 10px;
   width: auto;
   height: 500px;
   background-color: bisque;
+}
+.blog_do {
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  background-color: #1b1b1b;
+  position: absolute;
+  left: 30px;
 }
 </style>
