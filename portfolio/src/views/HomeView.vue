@@ -28,29 +28,29 @@
 <script>
 /* eslint-disable */
 export default {
-  name: "app",
+  name: 'app',
   data() {
-    return {};
+    return {}
   },
   methods: {
     page1: function () {
-      window.location.href = link;
-      var link = "http://localhost:8080/page1";
+      var link = 'http://localhost:8080/page1'
+      window.location.href = link
     },
     page2: function () {
-      window.location.href = link;
-      var link = "http://localhost:8080/page2";
+      var link = 'http://localhost:8080/page2'
+      window.location.href = link
     },
     page3: function () {
-      window.location.href = link;
-      var link = "http://localhost:8080/page3";
+      var link = 'http://localhost:8080/page3'
+      window.location.href = link
     },
     page4: function () {
-      window.location.href = link;
-      var link = "http://localhost:8080/page4";
-    },
-  },
-};
+      var link = 'http://localhost:8080/page4'
+      window.location.href = link
+    }
+  }
+}
 </script>
 
 <style>
