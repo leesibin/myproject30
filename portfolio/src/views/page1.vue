@@ -1,52 +1,67 @@
 <template>
   <h2>To-do-list만들기</h2>
-  <input type="text" v-model="content" @keyup.enter="addToDo()" />
+  <input
+    type="text"
+    v-model="content"
+    @keyup.enter="addToDo()"
+    placeholder="입력하세요"
+  />
   <button @click="addToDo()">제출</button>
   <button @click="allclear()">전체삭제</button>
-  <todolist :todos="todos" />
+  <ul>
+    <li id="text" v-for="(todo, index) in todos" v-bind:key="todo">
+      <input type="checkbox" v-bind:id="check" />
+      <label v-bind:for="check"></label>
+      <!--label 안해주며 동시에 체크 해진다  -->
+      <span>{{ todo }}</span>
+      <button @click="close(todo, index)">닫기</button>
+    </li>
+  </ul>
   <!-- 컴포넌트 데이터끌어오기 -->
 </template>
 
 <script>
-import todolist from '../components/todolist.vue'
 /* eslint-disable */
 export default {
   name: 'app',
   data() {
     return {
       todos: [],
-      content: '',
-      num: 0
+      check: false,
+      content: ''
     }
   },
   created() {
-    if (localStorage.length > 0) {
-      for (let i = 0; i < localStorage.length; i++) {
-        if (localStorage.key(i) !== 'loglevel:webpack-dev-server') {
-          this.todos.push(localStorage.getItem(localStorage.key(i)))
-        }
-      }
+    const f5 = JSON.parse(localStorage.getItem('todolist')) ?? 0
+    console.log(f5)
+    if (f5) {
+      f5.forEach((v) => {
+        this.todos.push(v)
+      })
     }
   },
   methods: {
     addToDo() {
-      this.todos.push(this.content)
-      console.log('성공')
-      if (this.content !== '') {
-        let value = this.content
-        localStorage.setItem(this.content, JSON.stringify(value))
-        this.content = ''
-      }
+      var obj = { item: this.content }
+      this.todos.push(obj.item)
+      localStorage.setItem('todolist', JSON.stringify(this.todos))
+      this.content = ''
     },
     allclear() {
       localStorage.clear()
       this.todos = []
+    },
+    close(todos) {
+      this.todos.pop(todos)
+      localStorage.setItem('todolist', JSON.stringify(this.todos))
+      console.log(todos)
     }
-  },
-  components: {
-    todolist
   }
 }
 </script>
 
-<style></style>
+<style>
+#text {
+  list-style: none;
+}
+</style>
