@@ -8,11 +8,17 @@
 margin: 0 400px;
 }
 .header-img{
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     position: absolute;
     top: 150px;
-    left: 1300px;
+    left: 1000px;
+}
+.header-p1{
+    font-size: 20px;
+}
+.header-p2{
+    font-size: 20px;
 }
 html {
     scroll-behavior: smooth;
