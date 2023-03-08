@@ -291,8 +291,8 @@ a:focus,a:hover {
 
 .project-1 {
     background-color: #0b2a3e;
-    width: 66.66%;
-    height: 700px
+    width: 33.33%;
+    height: 350px
 }
 
 .project-1.load-bg .project-image {

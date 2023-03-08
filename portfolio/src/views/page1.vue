@@ -7,7 +7,6 @@
     placeholder="입력하세요"
   />
   <button @click="addToDo()">제출</button>
-  <<<<<<< HEAD
   <button @click="allclear()">전체닫기</button>
 
   <li id="text" v-for="list in todos" :key="list">
@@ -26,7 +25,6 @@
       <button @click="close(todo, index)">닫기</button>
     </li>
   </ul>
-  >>>>>>> 7e0bccf6ea1f9da0960d28682edc9d05c870255d
   <!-- 컴포넌트 데이터끌어오기 -->
 </template>
 
