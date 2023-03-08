@@ -1,7 +1,13 @@
 <template>
   <h2>To-do-list만들기</h2>
-  <input type="text" v-model="content" @keyup.enter="addToDo()" />
+  <input
+    type="text"
+    v-model="content"
+    @keyup.enter="addToDo()"
+    placeholder="입력하세요"
+  />
   <button @click="addToDo()">제출</button>
+  <<<<<<< HEAD
   <button @click="allclear()">전체닫기</button>
 
   <li id="text" v-for="list in todos" :key="list">
@@ -9,6 +15,18 @@
     <label v-bind:for="checkd"></label>
     {{ list }} <button>닫기</button>
   </li>
+  =======
+  <button @click="allclear()">전체삭제</button>
+  <ul>
+    <li id="text" v-for="(todo, index) in todos" v-bind:key="todo">
+      <input type="checkbox" v-bind:id="check" />
+      <label v-bind:for="check"></label>
+      <!--label 안해주며 동시에 체크 해진다  -->
+      <span>{{ todo }}</span>
+      <button @click="close(todo, index)">닫기</button>
+    </li>
+  </ul>
+  >>>>>>> 7e0bccf6ea1f9da0960d28682edc9d05c870255d
   <!-- 컴포넌트 데이터끌어오기 -->
 </template>
 
@@ -19,24 +37,42 @@ export default {
   data() {
     return {
       todos: [],
+      check: false,
       content: ''
     }
   },
-  created() {},
+
+  created() {
+    const f5 = JSON.parse(localStorage.getItem('todolist')) ?? 0
+    console.log(f5)
+    if (f5) {
+      f5.forEach((v) => {
+        this.todos.push(v)
+      })
+    }
+  },
   methods: {
     addToDo() {
-      console.log('성공')
-      this.todos.push({ item: this.content })
+      var obj = { item: this.content }
+      this.todos.push(obj.item)
+      localStorage.setItem('todolist', JSON.stringify(this.todos))
       this.content = ''
-      localStorage.setItem('ToDolist', JSON.stringify(this.todos))
     },
     allclear() {
-      console.log('성공')
-      this.todos = ''
       localStorage.clear()
+      this.todos = []
+    },
+    close(todos) {
+      this.todos.pop(todos)
+      localStorage.setItem('todolist', JSON.stringify(this.todos))
+      console.log(todos)
     }
   }
 }
 </script>
 
-<style></style>
+<style>
+#text {
+  list-style: none;
+}
+</style>

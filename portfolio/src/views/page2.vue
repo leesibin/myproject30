@@ -1,9 +1,8 @@
 <template>
-  <div>2페이지 입니다</div>
+  <div>2페이지입니다.</div>
 </template>
 
 <script>
-/* eslint-disable */
 export default {
   name: 'app',
   data() {
