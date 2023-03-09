@@ -7,6 +7,14 @@
     placeholder="입력하세요"
   />
   <button @click="addToDo()">제출</button>
+  <button @click="allclear()">전체닫기</button>
+
+  <li id="text" v-for="list in todos" :key="list">
+    <input type="checkbox" v-bind:id="checkd" />
+    <label v-bind:for="checkd"></label>
+    {{ list }} <button>닫기</button>
+  </li>
+  =======
   <button @click="allclear()">전체삭제</button>
   <ul>
     <li id="text" v-for="(todo, index) in todos" v-bind:key="todo">
@@ -31,6 +39,7 @@ export default {
       content: ''
     }
   },
+
   created() {
     const f5 = JSON.parse(localStorage.getItem('todolist')) ?? 0
     console.log(f5)
