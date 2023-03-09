@@ -1,7 +1,6 @@
 /* 상단프로필 */
 .header-profile{
     background-color: blue;
-    max-width: 100%px;
     height: 600px;
 }
 .header-h3{
@@ -30,8 +29,27 @@ margin: 0 400px;
 .About-box2{
     display: flex;
 }
+.About-box3{
+    margin-right: 2rem;
+}
 .about-name{
     margin-bottom: 2rem;
+}
+.about-name2{
+    font-weight: 700;
+}
+.about-h2{
+    margin-bottom: 5rem;
+}
+/*skills*/
+.skills{
+background-color: #ffc107;
+}
+.skills-box{
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 html {
     scroll-behavior: smooth;
@@ -76,14 +94,13 @@ caption,th {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-weight: 400;
-    font-size: 100%;
+
     margin: 0;
     padding: 0
 }   
 
 body {
-    font-family: 'Roboto Slab',serif;
+    font-family: 'Noto Sans KR', sans-serif;
     color: #000
 }
 
@@ -113,14 +130,8 @@ h3 {
 } 
 
 a {
-    text-decoration: none;
-    text-shadow: .03em .03em #fff,-.03em .03em #fff,.03em .03em #fff,.03em -.09em #fff,.06em .03em #fff,-.06em .03em #fff,.09em .03em #fff,-.09em .03em #fff,.12em .03em #fff,-.12em -.07em #fff,.15em .03em #fff,-.15em .03em #fff;
-    background-image: linear-gradient(#fff,#fff),linear-gradient(#fff,#fff),linear-gradient(#ed1a44,#ed1a44);
-    background-size: .05em 4px,.05em 4px,4px 4px;
-    background-repeat: no-repeat,no-repeat,repeat-x;
-    background-position: 0 90%,100% 90%,0 90%;
+    text-decoration: none;   
     color: #000;
-    text-decoration: none;
 }
 
 a:focus,a:hover {
@@ -136,7 +147,8 @@ a:focus,a:hover {
     line-height: 1em;
     position: relative;
     max-width: 1000px;
-    margin: 0 auto
+    margin: 0 auto;
+    width: 100%;
 }
 
 .nav-logo {
@@ -170,7 +182,7 @@ a:focus,a:hover {
     font-size: 1.2em;
     background-size: .05em 2px,.05em 2px,2px 1px;
     text-decoration: none;
-    text-shadow: .03em .15em #fff,-.03em .15em #fff,.03em .15em #fff,.03em -.09em #fff,.06em .15em #fff,-.06em .15em #fff,.09em .15em #fff,-.09em .15em #fff,.12em .15em #fff,-.12em .15em #fff,.15em .15em #fff,-.15em .15em #fff
+    
 }
   
 .projects {
