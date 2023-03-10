@@ -1,4 +1,4 @@
-/* 상단프로필 */
+/* 상단메뉴 */
 .header-profile{
     background-color: blue;
     height: 600px;
@@ -12,6 +12,14 @@ margin: 0 400px;
     position: absolute;
     top: 150px;
     left: 1000px;
+}
+.header-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    box-shadow: 0 1px 0.3rem hsl(0deg 0% 80% / 80%);
 }
 .header-p1{
     font-size: 20px;
@@ -34,12 +42,20 @@ margin: 0 400px;
 }
 .about-name{
     margin-bottom: 2rem;
+    width: 33%;
 }
 .about-name2{
     font-weight: 700;
+    font-size: 2rem;
+    
 }
 .about-h2{
     margin-bottom: 5rem;
+   
+}
+.about-name3{
+    font-weight: 700;
+    font-size: 1.25rem;
 }
 /*skills*/
 .skills{
@@ -51,6 +67,21 @@ background-color: #ffc107;
     flex-direction: row;
     flex-wrap: wrap;
 }
+.skills-h2{
+    margin-bottom: 3rem;
+}
+.text-wrap .skills-box div
+{
+    background-color: white;
+    width: 30%;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
+    margin: 1rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
 html {
     scroll-behavior: smooth;
 }    
@@ -158,10 +189,6 @@ a:focus,a:hover {
     transition: all ease .5s;
 }
 
-.logo-end {
-    color: #ed1a44;
-    font-size: 1.3em
-}
 
 .nav-menu {
     float: right
@@ -414,7 +441,7 @@ a:focus,a:hover {
     opacity: 1; 
     transform: translateY(0);
     width: 100%;
-    max-width: 71.25rem;
+    max-width: 100rem;
     padding: 4rem 2rem;
     margin: 0 auto;
 } 
