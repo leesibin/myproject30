@@ -1,10 +1,25 @@
 /* 상단메뉴 */
 .header-profile{
-    background-color: blue;
-    height: 600px;
+    background-color: rgba(40, 71, 63, 0.7);
+    height: auto;
+    width: 100%;
+    padding: 2rem 2rem;
+}
+.header-box{
+    background-image:url("../img/pro.png");
+    background-size: cover;
 }
 .header-h3{
-margin: 0 400px;
+    text-align: center;
+    color: #fff;
+}
+.header-hr{
+    width: 3.25rem;
+    border: none;
+    border-top: .2rem solid #f4623a;
+    margin: 1.5rem auto;
+    height: 0;
+    opacity: 1;
 }
 .header-img{
     width: 400px;
@@ -23,6 +38,8 @@ margin: 0 400px;
 }
 .header-p1{
     font-size: 20px;
+    color: hsla(0,0%,100%,.7);
+    text-align: center;
 }
 .header-p2{
     font-size: 20px;
@@ -187,6 +204,7 @@ a:focus,a:hover {
     font-weight: 800;
     float: left; 
     transition: all ease .5s;
+    color: hsla(0,0%,100%,.7);
 }
 
 
@@ -209,7 +227,8 @@ a:focus,a:hover {
     font-size: 1.2em;
     background-size: .05em 2px,.05em 2px,2px 1px;
     text-decoration: none;
-    
+    font-weight: 700;
+    color: hsla(0,0%,100%,.7);
 }
   
 .projects {
