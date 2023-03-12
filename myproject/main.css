@@ -1,4 +1,11 @@
 /* 상단메뉴 */
+.header-h3{
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 5rem;
+}
+h2{
+   font-family: 'Black Han Sans', sans-serif;
+}
 .header-profile{
     background-color: rgba(40, 71, 63, 0.7);
     height: auto;
@@ -97,6 +104,10 @@ background-color: #ffc107;
     margin: 1rem;
     text-align: center;
     padding-top: 2rem;
+}
+/*projects*/
+.pro-h2{
+    padding: 1em 0
 }
 
 html {
