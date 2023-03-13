@@ -52,6 +52,9 @@ h2{
     font-size: 20px;
 }
 /* about me  */
+#about{
+    text-align: center;
+}
 .About-box{
     display: flex;
     flex-flow: row wrap;
@@ -73,8 +76,10 @@ h2{
     font-size: 2rem;
     
 }
-.about-h2{
+h2{
     margin-bottom: 5rem;
+    font-size: 4em;
+    text-align: center;
    
 }
 .about-name3{
@@ -84,28 +89,42 @@ h2{
 /*skills*/
 .skills{
 background-color: #ffc107;
-}
-.skills-box{
-    display: flex;
-    flex-flow: row wrap;
-    flex-direction: row;
-    flex-wrap: wrap;
+text-align: center;
 }
 .skills-h2{
     margin-bottom: 3rem;
 }
-.text-wrap .skills-box div
+.text-wrap .skills-box .skills-box2
 {
+    display: inline-block;
+    padding: 1.5rem;
     background-color: white;
-    width: 30%;
-    height: 300px;
+    width: 21rem;
     border-radius: 20px;
     box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
-    margin: 1rem;
-    text-align: center;
-    padding-top: 2rem;
+    margin: 2rem;
+    text-align: center;;
+    color: #f4623a;
+    transition: 0.5s ease;
+
 }
+.skills-box2:hover{
+    transform: translateY(30px);
+}
+.text-wrap .skills-box .skills-box2 div{
+    padding-bottom: .5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #ccc;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #f4623a;
+}
+
 /*projects*/
+ul{
+    position: relative;
+    clear: both;
+}
 .pro-h2{
     padding: 1em 0
 }
@@ -135,6 +154,7 @@ fieldset,img {
 
 address,caption,cite,code,dfn,em,strong,th,var {
     font-weight: 400;
+    font-size:  2rem;
     font-style: normal
 }
 
@@ -167,11 +187,7 @@ body,html {
     overflow-x: hidden
 } 
 
-h2 {
-    font-size: 5em;
-    text-align: center;
-    
-}
+
 
 h3 {
     font-size: 3em
@@ -202,10 +218,9 @@ a:focus,a:hover {
 }  
 
 .nav-wrapper {
-    padding: 2.2em 0;
     line-height: 1em;
     position: relative;
-    max-width: 1000px;
+    max-width: 100%;
     margin: 0 auto;
     width: 100%;
 }
@@ -255,9 +270,7 @@ a:focus,a:hover {
     display: table
 }
 
-.projects:after {
-    content: ""
-} 
+
 .project.active .project-content,.project:not(.no-hover):hover .project-content {
     background-color: rgba(0,0,0,.5);
     position: relative
@@ -378,29 +391,6 @@ a:focus,a:hover {
     height: 350px
 }
 
-.project-1.load-bg .project-image {
-    background-image: url(./imgs/amos.gif)
-}
-
-.project-2.load-bg .project-image {
-    background-image: url(./imgs/iu.gif)
-}
-
-.project-3.load-bg .project-image {
-    background-image: url(./imgs/knue.gif) 
-}
-
-.project-6.load-bg .project-image { 
-    background-image: url(./imgs/thou.gif)  
-}
-
-.project-4.load-bg .project-image { 
-    background-image: url(./imgs/lucid.png)
-}
-
-.project-5.load-bg .project-image {
-    background-image: url(./imgs/mocha.png) 
-}
 
 .project-2 {
     background-color: #ed1a44 
@@ -471,7 +461,7 @@ a:focus,a:hover {
     opacity: 1; 
     transform: translateY(0);
     width: 100%;
-    max-width: 100rem;
+    max-width: 90rem;
     padding: 4rem 2rem;
     margin: 0 auto;
 } 
