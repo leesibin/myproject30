@@ -52,14 +52,12 @@ h2{
     font-size: 20px;
 }
 /* about me  */
-#about{
-    text-align: center;
-}
 .About-box{
     display: flex;
     flex-flow: row wrap;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 3rem;
 }
 .About-box2{
     display: flex;
@@ -73,14 +71,11 @@ h2{
 }
 .about-name2{
     font-weight: 700;
-    font-size: 2rem;
-    
+    font-size: 2rem; 
 }
 h2{
-    margin-bottom: 5rem;
-    font-size: 4em;
     text-align: center;
-   
+    font-size: 4em;  
 }
 .about-name3{
     font-weight: 700;
@@ -171,13 +166,6 @@ ol,ul {
 caption,th {
     text-align: left
 }
-
-h1,h2,h3,h4,h5,h6 {
-
-    margin: 0;
-    padding: 0
-}   
-
 body {
     font-family: 'Noto Sans KR', sans-serif;
     color: #000
@@ -261,11 +249,13 @@ a:focus,a:hover {
   
 .projects {
     position: relative;
-    clear: both
+    clear: both;
+    margin-bottom: 30rem;
 }
 
 .project {
-    width: 33.33%;
+    margin: 0 1rem;
+    width: 30%;
     position: relative;
     height: 350px;
     float: left;
@@ -469,8 +459,19 @@ a:focus,a:hover {
     max-width: 90rem;
     padding: 4rem 2rem;
     margin: 0 auto;
-} 
- 
+}
+.move{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 4rem;
+    height: 4rem;
+    border: 0.5rem solid #000;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    cursor: pointer;
+    opacity: .5;
+}
 @media all and (max-width: 1100px) {
     .nav-logo {
         padding:0 0 0 5%

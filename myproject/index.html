@@ -12,13 +12,19 @@
     <meta name="Resource-type" content="Document">
     <meta name="robots" content="ALL">
     <title>Lee si bin | Portfolio</title>
-    <script src="https://kit.fontawesome.com/cbe76240f6.js" crossorigin="anonymous"></script> 
+    <script src="https://kit.fontawesome.com/cbe76240f6.js" crossorigin="anonymous"></script>
+     <!--구글폰트  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <!-- jQuery -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>    
+    <script type="text/javascript" src="./slick.min.js"></script>
+    <!-- main-css/js -->
     <link rel="stylesheet" href="./main.css">
     <script src="./main.js"></script>
 </head>
@@ -33,8 +39,8 @@
             <ul class="nav-menu">
                 <li><a href="#about">About me</a></li>
                 <li><a href="#skills">skills</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#awards">Awards</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="https://github.com/leesibin" target="_blank" class="no-link"><i
                             class="fab fa-github"></i></a></li>
             </ul>
@@ -58,16 +64,7 @@
           <div class="about-name">
             <div class="About-box2">
                 <div class="About-box3">
-                    <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <rect width="96" height="96" fill="url(#pattern0)"/>
-                        <defs>
-                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                        <use xlink:href="#image0_101_108" transform="scale(0.0104167)"/>
-                        </pattern>
-                        <image id="image0_101_108" width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAADPElEQVR4nO2cy2oUQRSGPxeSKFF0ISQICmqCeAmoK+/gM2hMwBcQUXHvfaEQssnGS2IeQXwBXSiYSHAhuIm6MN7QJBvFieYClhSpwXEMIeN096me/j/4NzMhp89/eqq7+lQ1CCGEEEIIIYQQQggRH2uBHmAQGAUmgbmgyfDZANANrLE+2EaiAxgCpgG3TPm/vQe0Wx98nlkF9AHzNRhfLf/r6AWarZPJG+3AyzqMr9YI0GadVF7YE8Z0l7A+AJ3WyeXhzJ9MwfzKIrRaJxkrzcCLFM0v63m4vogq+jIwv6xr1cGLTkeddzu16ruGor8ZytD8sm4ZnWxRznCnDQpQ0ox5gR4D88s6GY6h0AwaFuCudfIxMGpYAD9DLjxThgWYKLz7wKxhAWZUAFQAa6Y0BNkyqouwLQOGBbhjnHsUdBsW4IR18jHQEh4LZG1+KcQWLDTQsy6AH/pERSdsLkPz/dxjSzm4WKA3wwLcDDFFVUtyJAPzh4GmysDiD75h/j5F8z8BGyviiUXoDKsXkjbfF3b3YgHFv2wAHic87Gg5So00hdULpTrvdm5ozK+P1tBAr6UQpdDt0q1mgrSEHq5/fvMsNFNmgybCZ7eBLs1whRBCCCGEEEIIIYQQUT/7PwLsyiCW74odVo8A9gGXgEfAj/Ac/zOwKUXzNwNfQiwf8yFwEdhLQdgJXAVeLdFMeQtsTcn8N0vEHQf6gUPAChqI9cAF4HUNHa2PwIEEj+Fg+J/LjT8GnAfWkWO2hyWH/7sFdS70hOt5rcBq4Hodm8BLYQmj30ieG9pCPzapne/jwNka24z+jVnngHcJHcN8aHdGvbJiJXAlxZXOJeA+cBrYH8xoDmoNQ5b/7kGKG7/9MVwOuUaFv8A9TSlpF6H8rp5tRIJfqfAtAlNcxvoKHLc2398p/IrADGckn/sZK/O7Cm6+qyjCKYsJ1UwEybtI9BPYkWUBhiNI2kWmJ1mZfyyCZF2kOtqob7dyOVEmG/9qeaZTNI1lUQCL14u5nMjPlFPHOkkXuVQAVADzs9DpF2BvhNMQZG+GM5CuAagA5meh0y/A3ginIcjeDGcgXQNo8AIIIYQQQgghhBBCCHLJb/bnPNZybY9WAAAAAElFTkSuQmCC"/>
-                        </defs>
-                        </svg>
-                        
+                        <img src="/aboutimg/icons8-성별-중립-사용자-50.png" alt="">
         </div>
             <div>
                 <div class="about-name2" >이름</div>
@@ -78,7 +75,7 @@
     <div class="about-name" >
         <div class="About-box2">
             <div class="About-box3">
-                <img src="/img/calender.png" alt="" width="30px" height="30px">
+                <img src="/aboutimg/icons8-달력-50.png" alt="">
              </div>
         <div>
             <div class="about-name2" >생년월일</div>
@@ -90,7 +87,7 @@
 <div class="about-name" >
     <div class="About-box2">
         <div class="About-box3">
-    <img src="/img/map.png" alt="" width="30px" height="30px">
+    <img src="/aboutimg/icons8-채점자-50.png" alt="" >
     </div>
     <div>
         <div class="about-name2" >주소지</div>
@@ -101,52 +98,42 @@
 <div class="about-name" >
     <div class="About-box2">
         <div class="About-box3">
-    <img src="/img/tel.png" alt="" width="30px" height="30px">
+    <img src="/aboutimg/icons8-전화-50.png" alt="" >
         </div>
     <div>
         <div class="about-name2" >연락처</div>
-        <div >010-2868-6628</div>
+        <div class="about-name3">010-2868-6628</div>
     </div>
 </div>
 </div>
 <div class="about-name"  >
     <div class="About-box2">
         <div class="About-box3">
-    <img src="/img/msg.png" alt="" width="30px" height="30px">
+    <img src="/aboutimg/icons8-메시지-50.png" alt="" >
         </div>
     <div>
         <div class="about-name2" >이메일</div>
-        <div>tlqls6628@naver.com</div>
+        <div class="about-name3">tlqls6628@naver.com</div>
     </div>
 </div>
 </div>
 <div class="about-name">
     <div class="About-box2">
         <div class="About-box3">
-            <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_102_125)">
-                <path d="M40 36H56V24H68L48 4L28 24H40V36ZM36 40H24V28L4 48L24 68V56H36V40ZM92 48L72 28V40H60V56H72V68L92 48ZM56 60H40V72H28L48 92L68 72H56V60Z" fill="black"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_102_125">
-                <rect width="96" height="96" fill="white"/>
-                </clipPath>
-                </defs>
-                </svg>
-                
-                
+                <img src="/aboutimg/icons8-도서-철학-50.png" alt="">
         </div>
     <div>
        
         <div class="about-name2" >학력</div>
-        <div>한국폴리텍창원대학<br>(전기전자과)</div>
+        <div class="about-name2">한국폴리텍창원대학<br>(전기전자과)</div>
     </div>
 </div>
 </div>
         </div>
         </div>
     </article>
-   
+    
+
 
     <article class="skills" data-anchor="skills" id="skills">
         <div class="text-wrap animate-text">
@@ -169,20 +156,13 @@
            
         </div>
     </article>
-    
-    <article class="awards" data-anchor="awards" id="awards">
-        <div class="text-wrap animate-text ">
-            <h2>Awards</h2>
-            <p class="text-intro"> 수정중입니다</p>
-         
-          
-    </article>
+
     <article class="projects" data-anchor="projects" id="projects">
         <div class="text-wrap animate-text ">
     <ul>
         <h2 class="pro-h2">PROJECTS</h2>
+        <div class="banna">
         <li class="project project-1 ripple load-bg"> 
-            <div class="project-image"></div>
             <a href="https://github.com/eunji0619/greentea/tree/main" class="project-content"target="_blank">
                 <h3 class="project-title"><span>웹 게시판 구현</span></h3>
                 <span class="project-underline"></span>
@@ -190,7 +170,6 @@
             </a>
         </li>
         <li class="project project-2 ripple load-bg">  
-            <div class="project-image"></div>
             <a href="https://github.com/Minkyun99/About-Thirty/tree/minkyung" class="project-content"target="_blank">
                 <h3 class="project-title"><span>웹 채팅 구현</span></h3>
                 <span class="project-underline"></span>
@@ -198,7 +177,6 @@
             </a>
         </li>
         <li class="project project-3 ripple load-bg">  
-            <div class="project-image"></div>
             <a href="https://github.com/leesibin/save.cm_chatbot-PJ-/tree/LSBclass" class="project-content"target="_blank">
                 <h3 class="project-title"><span>Telegarm bot을 활용한 채팅 구현</span></h3>
                 <span class="project-underline"></span>
@@ -206,7 +184,6 @@
             </a>
         </li>
         <li class="project project-4 ripple load-bg"> 
-            <div class="project-image"></div>
             <a href="https://github.com/leesibin/drag-Tensor-PJ-/tree/YDW" class="project-content" target="_blank">
                 <h3 class="project-title"><span> Ai를 활용한 통합 구현</span></h3>
                 <span class="project-underline"></span>
@@ -214,7 +191,6 @@
             </a>
         </li>
         <li class="project project-5 ripple load-bg"> 
-            <div class="project-image"></div>
             <a href="https://github.com/leesibin/chatGPT-PJ-" class="project-content"target="_blank">
                 <h3 class="project-title"><span>AI 채팅 봇 구현하기</span></h3>
                 <span class="project-underline"></span>
@@ -222,17 +198,38 @@
             </a>
         </li>
         <li class="project project-6 ripple load-bg"> 
-            <div class="project-image"></div>
             <a href="https://www.figma.com/proto/VH63l5ZouxY3vS7p96s1s5/public-transport-sample?node-id=152%3A56&scaling=scale-down&page-id=0%3A1&starting-point-node-id=152%3A37&show-proto-sidebar=1" class="project-content"target="_blank">
                 <h3 class="project-title"><span>어플 프로토타입 기획하기</span></h3>
                 <span class="project-underline"></span>
                 <div class="project-description"><span>Figma로 프로토타입 구현하기</span></div>
             </a>
         </li>
-    </ul>
     </div>
+    </ul>
 </article>
-   
+
+ 
+<article class="awards" data-anchor="awards" id="awards">
+    <div class="text-wrap animate-text ">
+        <h2>Awards</h2>
+        <p class="text-intro"> 수정중입니다</p>
+     
+      
+</article>
+
+<div class="move">
+    <img src="/aboutimg/icons8-긴-화살표-위로-50.png" alt="">
+</div>
+   <script>
+    $('.banna').slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: false
+
+});
+   </script>
 </body>
 
 </html>
