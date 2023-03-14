@@ -235,7 +235,9 @@ a:focus,a:hover {
 
 
 .nav-menu {
-    float: right
+    float: right;
+    align-items: center;
+    display: flex;
 }
 
 .nav-menu li {
@@ -322,6 +324,9 @@ a:focus,a:hover {
     text-shadow: none
 }
 
+.fab{
+  font-size: 2rem;
+}
 .project-title {
     font-size: 3em;
     margin: .25em 0;
