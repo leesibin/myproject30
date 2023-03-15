@@ -197,13 +197,7 @@ a {
     color: #000;
 }
 
-a:focus,a:hover {
-    color: #ed1a44;
-    background-image: linear-gradient(#fff,#fff),linear-gradient(#fff,#fff),linear-gradient(#ed1a44,#ed1a44);
-    background-size: .05em 4px,.05em 4px,4px 4px;
-    background-repeat: no-repeat,no-repeat,repeat-x;
-    background-position: 0 90%,100% 90%,0 90%
-}  
+
 
 .nav-wrapper {
     line-height: 1em;
@@ -234,8 +228,11 @@ a:focus,a:hover {
 }
 
 .nav-menu li a {
-    display: block
+    display: block;
 } 
+.nav-menu li a:hover{
+color: white;
+}
 
 .nav-menu li a {
     letter-spacing: .12em;
