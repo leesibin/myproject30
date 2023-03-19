@@ -143,10 +143,6 @@ table {
     border-spacing: 0
 }
 
-fieldset,img {
-    border: 0
-}
-
 address,caption,cite,code,dfn,em,strong,th,var {
     font-weight: 400;
     font-size:  2rem;
@@ -590,6 +586,11 @@ color: white;
         padding: 6em 0
     }
 }
+@media all and (max-width: 600px){
+    .about-img{
+        border: 0
+    }
+}
 
 @media all and (max-width: 350px) {
     .project {
@@ -598,13 +599,7 @@ color: white;
         height: 200px
     }
 }
-@media all and (max-width: 350px) {
-    .text-wrap .skills-box .skills-box2 {
-        position:relative;
-        width: 100%;
-        height: 200px
-    }
-}
+
 @media all and (max-width: 1000px) {
     .about-name{
        width: 50%;
@@ -614,4 +609,37 @@ color: white;
     .about-name{
        width: 100%;
     }
-} 
+}
+@media all and (max-width: 600px){
+.text-wrap .skills-box .skills-box2 {
+    display: inline-block;
+    padding: 1.5rem;
+    background-color: white;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
+    text-align: center;
+    color: #f4623a;
+    margin: 3rem 1rem 3rem 1rem;
+    transition: 0.5s ease;
+}
+}
+@media all and (max-width: 350px) {
+    .about-img0{
+       border: 0;
+       width: 40px;
+    }
+}
+@media all and (max-width: 600px) {
+    .about-img{
+       border: 0;
+       width: 100%;
+    }
+}
+@media all and (max-width: 600px) {
+    .skiils-img{
+       border: 0;
+       width: 100%;
+    }
+}
+
