@@ -643,3 +643,20 @@ color: white;
     }
 }
 
+@media all and (max-width: 600px) {
+    .slick-track{
+       border: 0;
+       width: 50%;
+    }
+}
+@media all and (max-width: 600px) {
+    .nav-logo{
+       font-size: 1rem;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .nav-menu{
+       display: none;
+    }
+}
