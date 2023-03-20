@@ -316,7 +316,6 @@ color: white;
     text-align: center;
     color: #fff;
     font-size: 2.4em;
-    overflow-y: hidden
 }
 
 .project-underline {
@@ -595,8 +594,6 @@ color: white;
 @media all and (max-width: 350px) {
     .project {
         position:relative;
-        width: 100%;
-        height: 200px
     }
 }
 
